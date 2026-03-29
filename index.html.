@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuraDeals | Toutes les promos à Djibouti 🇩🇯</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Gura<span>Deals</span> 🇩🇯</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher une promo...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-icons">
+                <button class="vendeur-btn">Vendre</button>
+            </div>
+        </nav>
+        
+        <div class="categories-bar">
+            <span><i class="fas fa-mobile-alt"></i> Électronique</span>
+            <span><i class="fas fa-tshirt"></i> Mode</span>
+            <span><i class="fas fa-utensils"></i> Food</span>
+            <span><i class="fas fa-spa"></i> Beauté</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Bienvenue sur GuraDeals !</h1>
+        <p>Les meilleures offres de Djibouti au même endroit.</p>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">🔥 Promos du jour</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="badge">-50%</div>
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Nike">
+                <div class="card-info">
+                    <span class="shop-name">Asli Shop</span>
+                    <h3>Nike Air Max Pro</h3>
+                    <div class="prices">
+                        <span class="new-price">12,500 FDJ</span>
+                        <span class="old-price">25,000 FDJ</span>
+                    </div>
+                    <button class="buy-btn">Commander sur WhatsApp</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
