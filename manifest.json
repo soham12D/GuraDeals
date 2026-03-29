@@ -1,0 +1,16 @@
+{
+  "name": "GuraDeals Djibouti",
+  "short_name": "GuraDeals",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0080ff",
+  "description": "Le n°1 des promos à Djibouti",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3659/3659899.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
