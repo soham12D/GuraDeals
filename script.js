@@ -34,7 +34,7 @@ function showSection(name) {
 const publishBtn = document.querySelector('.plus-btn');
 if(publishBtn) {
     publishBtn.onclick = () => {
-        const num = "25377000000"; // REMPLACE PAR TON NUMÉRO 🇩🇯
+        const num = "25377331062"; // REMPLACE PAR TON NUMÉRO 🇩🇯
         const msg = encodeURIComponent("Bonjour GuraDeals, je souhaite publier une annonce sur l'application.");
         window.open(`https://wa.me/${num}?text=${msg}`);
     };
