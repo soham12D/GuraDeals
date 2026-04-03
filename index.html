@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>GuraDeals 🇩🇯 - Catalogues</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Gura<span>Deals</span> 🇩🇯</div>
+        <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+    </nav>
+
+    <div class="search-box">
+        <input type="text" placeholder="Trouver un magasin ou une promo...">
+    </div>
+
+    <main class="container">
+        <h2 class="section-title">📍 Catalogues à Djibouti</h2>
+        
+        <div class="catalog-grid">
+            <div class="catalog-card">
+                <div class="catalog-img-container">
+                    <img src="https://images.unsplash.com/photo-1604719312563-8912e9223c6a?auto=format&fit=crop&w=400">
+                    <div class="offer-count">12 Offres</div>
+                </div>
+                <div class="catalog-info">
+                    <h3>Casino Supermarché</h3>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i> Plateau</div>
+                    <button class="btn-view" onclick="openWhatsApp('Casino')">Voir les promos</button>
+                </div>
+            </div>
+
+            <div class="catalog-card">
+                <div class="catalog-img-container">
+                    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=400">
+                    <div class="offer-count">5 Offres</div>
+                </div>
+                <div class="catalog-info">
+                    <h3>Djib-Store</h3>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i> Balbala</div>
+                    <button class="btn-view" onclick="openWhatsApp('Djib-Store')">Voir les promos</button>
+                </div>
+            </div>
+            
+            <div class="catalog-card">
+                <div class="catalog-img-container">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=400">
+                    <div class="offer-count">8 Offres</div>
+                </div>
+                <div class="catalog-info">
+                    <h3>Espace Mode</h3>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i> Salines</div>
+                    <button class="btn-view" onclick="openWhatsApp('Espace Mode')">Voir les promos</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="bottom-bar">
+        <div class="nav-item active"><i class="fas fa-th-large"></i><span>Catalogues</span></div>
+        <div class="nav-item"><i class="fas fa-map-marked-alt"></i><span>Carte</span></div>
+        <div class="nav-item plus-btn"><i class="fas fa-plus"></i></div>
+        <div class="nav-item"><i class="fas fa-bell"></i><span>Alertes</span></div>
+        <div class="nav-item"><i class="fas fa-user"></i><span>Compte</span></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
