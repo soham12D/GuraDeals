@@ -1,0 +1,90 @@
+:root {
+    --primary-yellow: #FEE440;
+    --primary-green: #55A630;
+    --white: #FFFFFF;
+    --bg-light: #f4f7f6;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-light);
+    padding-bottom: 100px;
+}
+
+/* Mode Nuit */
+body.dark-mode { background-color: #121212; color: white; }
+body.dark-mode .navbar, body.dark-mode .catalog-card, body.dark-mode .bottom-bar { background: #1e1e1e; border-color: #333; }
+body.dark-mode .location { color: #aaa; }
+
+/* Navbar & Search */
+.navbar { display: flex; justify-content: space-between; padding: 15px; background: white; border-bottom: 2px solid var(--primary-yellow); align-items: center; }
+.logo { font-size: 24px; font-weight: 900; color: var(--primary-green); }
+.logo span { color: var(--primary-yellow); }
+#theme-toggle { background: none; border: none; font-size: 20px; color: var(--primary-green); }
+
+.search-box { display: flex; padding: 15px; gap: 10px; background: white; }
+.search-box input { flex: 1; padding: 12px; border: 2px solid #eee; border-radius: 12px; font-size: 16px; outline: none; }
+.search-box input:focus { border-color: var(--primary-green); }
+
+/* Grille de Catalogues style Tiendeo */
+.container { padding: 15px; }
+.section-title { margin-bottom: 15px; font-size: 20px; font-weight: 800; }
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.catalog-card {
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+    transition: transform 0.2s;
+}
+
+.catalog-card:active { transform: scale(0.95); }
+
+.catalog-img-container {
+    position: relative;
+    height: 150px;
+}
+
+.catalog-img-container img { width: 100%; height: 100%; object-fit: cover; }
+
+.offer-count {
+    position: absolute; bottom: 10px; right: 10px;
+    background: var(--primary-yellow); color: var(--primary-green);
+    padding: 4px 8px; border-radius: 8px; font-size: 11px; font-weight: bold;
+}
+
+.catalog-info { padding: 12px; }
+.catalog-info h3 { font-size: 15px; margin-bottom: 4px; font-weight: 700; }
+.location { font-size: 11px; color: #777; display: flex; align-items: center; gap: 4px; }
+
+/* Bouton WhatsApp sur toute la largeur */
+.btn-view {
+    width: 100%; background: var(--primary-green); color: white;
+    border: none; padding: 10px; border-radius: 10px; margin-top: 10px;
+    font-weight: 700; font-size: 13px;
+}
+
+/* Barre de navigation du bas */
+.bottom-bar {
+    position: fixed; bottom: 0; width: 100%; height: 75px;
+    background: white; display: flex; align-items: center; border-top: 1px solid #eee;
+}
+.nav-item { flex: 1; text-align: center; color: #bbb; font-size: 10px; }
+.nav-item.active { color: var(--primary-green); }
+.nav-item i { font-size: 22px; display: block; margin-bottom: 3px; }
+
+.plus-btn i {
+    font-size: 35px; color: var(--primary-green); background: var(--primary-yellow);
+    width: 55px; height: 55px; border-radius: 50%; display: flex;
+    justify-content: center; align-items: center; margin-top: -40px;
+    border: 5px solid white; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
