@@ -1,0 +1,24 @@
+{
+  "short_name": "GuraDeals",
+  "name": "GuraDeals 🇩🇯 - Catalogues & Promos",
+  "description": "Les meilleures promotions et catalogues de Djibouti en un clic.",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3081/3081840.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3081/3081840.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/GuraDeals/",
+  "display": "standalone",
+  "theme_color": "#FEE440",
+  "background_color": "#FFFFFF",
+  "orientation": "portrait",
+  "scope": "/GuraDeals/",
+  "lang": "fr-FR"
+}
