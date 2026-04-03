@@ -1,0 +1,97 @@
+:root {
+    --primary-yellow: #FEE440;
+    --primary-green: #55A630;
+    --white: #FFFFFF;
+    --bg-light: #fdfdfd;
+    --text-dark: #2d3436;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    padding-bottom: 90px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* --- MODE NUIT CONFIG --- */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+body.dark-mode .navbar, body.dark-mode .bottom-bar, 
+body.dark-mode .product-card, body.dark-mode .search-box,
+body.dark-mode .category-tabs { background-color: #1e1e1e; border-color: #333; }
+body.dark-mode .price-now, body.dark-mode h3, body.dark-mode .section-title { color: #fff; }
+body.dark-mode .tab { background: #333; color: #bbb; border-color: #444; }
+
+/* 📢 Banner */
+.promo-banner {
+    background: var(--primary-yellow);
+    color: var(--primary-green);
+    text-align: center;
+    padding: 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* 导航 Navbar */
+.navbar {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 15px; border-bottom: 2px solid var(--primary-yellow);
+    background: white;
+}
+.logo { font-size: 22px; font-weight: 800; color: var(--primary-green); }
+.logo span { color: var(--primary-yellow); }
+#theme-toggle { background: none; border: none; font-size: 20px; color: var(--primary-green); cursor: pointer; }
+
+/* 🔍 Search */
+.search-box { display: flex; padding: 15px; gap: 8px; background: white; }
+.search-box input {
+    flex: 1; padding: 12px; border: 2px solid var(--primary-green);
+    border-radius: 12px; outline: none; font-size: 16px;
+}
+.search-box button {
+    background: var(--primary-yellow); color: var(--primary-green);
+    border: none; width: 50px; border-radius: 12px; font-size: 18px;
+}
+
+/* 📂 Tabs */
+.category-tabs { display: flex; gap: 10px; padding: 10px 15px; overflow-x: auto; background: white; }
+.tab { padding: 8px 18px; border-radius: 20px; border: 1px solid #eee; background: #f8f9fa; font-size: 14px; white-space: nowrap; font-weight: 600; }
+.tab.active { background: var(--primary-green); color: white; border-color: var(--primary-green); }
+
+/* 📦 Products */
+.container { padding: 15px; }
+.product-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.product-card { background: white; border-radius: 15px; overflow: hidden; border: 1px solid #eee; position: relative; }
+.product-card img { width: 100%; height: 130px; object-fit: cover; }
+.offer-badge { position: absolute; top: 8px; left: 8px; background: #ff4757; color: white; padding: 3px 7px; border-radius: 5px; font-size: 10px; font-weight: bold; }
+.p-info { padding: 10px; }
+.p-info h3 { font-size: 14px; margin-bottom: 5px; height: 34px; overflow: hidden; }
+
+/* 💰 PRIX BARRÉ ICI */
+.price-now { font-weight: 800; font-size: 15px; color: #000; }
+.price-old { text-decoration: line-through; color: #999; font-size: 12px; margin-left: 5px; }
+
+.order-btn {
+    width: 100%; background: #25D366; color: white; border: none;
+    padding: 10px; border-radius: 10px; margin-top: 10px; font-weight: bold;
+}
+
+/* 📱 Bottom Bar */
+.bottom-bar {
+    position: fixed; bottom: 0; width: 100%; height: 75px;
+    background: white; display: flex; align-items: center; border-top: 1px solid #eee;
+}
+.nav-item { flex: 1; text-align: center; color: #999; font-size: 10px; }
+.nav-item.active { color: var(--primary-green); }
+.nav-item i { font-size: 20px; display: block; margin-bottom: 2px; }
+
+.plus-btn i {
+    font-size: 38px; color: var(--primary-green); background: var(--primary-yellow);
+    width: 55px; height: 55px; display: flex; justify-content: center; align-items: center;
+    border-radius: 50%; margin-top: -35px; border: 5px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
